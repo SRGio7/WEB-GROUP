@@ -1,0 +1,398 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Amatic SC", sans-serif;
+}
+
+.content-1 {
+  position: absolute;
+  left: 18%;
+  background-color: antiquewhite;
+  border-radius: 20px;
+  height: 100vh;
+  width: 82%;
+}
+
+.part_2 {
+  height: 200vh;
+  width: auto;
+}
+
+/* .part_1{
+    position: absolute;
+} */
+
+/* .langganan {
+  border-radius: 15px;
+  background-color: white;
+  position: fixed;
+  height: 10vh;
+  width: 100%;
+  bottom: 0;
+  box-shadow: 15px 15px 10000px rgba(0, 0, 0, 0.3);
+} */
+
+.langganan {
+  border-radius: 15px;
+  background-color: antiquewhite;
+  position: fixed;
+  height: 13vh;
+  width: 17%;
+  bottom: 0;
+
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.3);
+}
+
+.prem-ket h2 {
+  font-size: 3vh;
+  margin-left: 100px;
+  margin-top: 10px;
+}
+
+.image img {
+  width: auto;
+  height: 120px;
+  cursor: pointer;
+  padding-top: 10px;
+}
+
+.stickyNav {
+  position: fixed;
+}
+
+.navbar {
+  background-color: antiquewhite;
+  height: 89vh;
+  width: 35vh;
+  text-align: center;
+  border-radius: 20px;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.3);
+}
+
+.option {
+  cursor: pointer;
+  margin-top: 50px;
+}
+
+/* .option h1 {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10px;
+    }
+    
+    .option h1:hover {
+        background-color: rgb(0, 201, 201);
+        display: flex;
+        justify-content: center;
+        padding-bottom: 10px;
+        } */
+
+.A {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  transition: 0.3s ease-in-out;
+}
+
+/* .A h1 {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+} */
+
+.A:hover {
+  background-color: rgb(235, 218, 197);
+  display: flex;
+  justify-content: center;
+  padding-bottom: 10px;
+}
+
+.resep-popular h1 {
+  display: flex;
+  font-size: 7vh;
+  justify-content: center;
+  margin-top: 2vh;
+}
+
+.Foto-awal {
+  display: flex;
+  justify-content: center;
+  margin-top: 3vh;
+}
+
+.Foto-awal img {
+  width: 161vh;
+  height: 60vh;
+  aspect-ratio: 16/9;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+.containtresep {
+  margin-top: 5vh;
+  display: flex;
+  justify-content: center;
+}
+
+.resepwrap {
+  background-color: white;
+  border-radius: 15px;
+  width: 161vh;
+  height: 28vh;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.3);
+}
+
+.rspL {
+  margin-left: 2vh;
+}
+
+.Resep-list {
+  top: 65vh;
+  position: absolute;
+  background-color: white;
+  padding: 6px;
+  border-radius: 5px;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.3);
+}
+
+.foto-mkn img {
+  height: 160px;
+  width: 160px;
+  border-radius: 10px 0px 0px 5px;
+  image-resolution: 4/3;
+  object-fit: cover;
+}
+
+.c-list-mkn {
+  margin: 3vh 3vh;
+}
+
+.list-mkn {
+  display: flex;
+}
+
+.mkn {
+  display: flex;
+  height: 21.7vh;
+  margin: 0vh 1.5vh;
+  background-color: antiquewhite;
+  border-radius: 5px;
+  padding-right: 2vh;
+  transition: 0.3s ease-in-out;
+  text-align: center;
+}
+
+.mkn:hover {
+  display: flex;
+  margin: 0vh 1.5vh;
+  background-color: rgb(190, 170, 146);
+  border-radius: 5px;
+  padding-right: 2vh;
+}
+
+.bintang {
+  height: 40px;
+  width: auto;
+  margin-top: 0px;
+  margin-left: 10px;
+}
+
+.mkn h1 {
+  color: rgb(0, 0, 0);
+  font-size: 3.6vh;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+.bk-c {
+  margin-left: 10px;
+}
+
+.bookmarks {
+  display: flex;
+}
+
+.toggle-switch {
+  position: absolute;
+  right: 2rem;
+}
+
+.toggle-switch-cf {
+  width: 60px;
+  height: 30px;
+  /* margin-left: 30vh; */
+}
+
+.toggle-switch input {
+  opacity: 50;
+  width: 0px;
+  height: 0px;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.ket-join {
+  font-size: 15px;
+  /* display: flex;
+    justify-content: center; */
+  margin-left: 35px;
+}
+
+/* .ket-join h1{
+      font-weight: 350;
+  font-style: normal;
+  font-size: 40px;
+  font-family: "Lato", sans-serif;
+} */
+
+.btn {
+  margin-left: 13vh;
+}
+
+.btn a {
+  position: absolute;
+  border-radius: 5px;
+  background-color: white;
+  text-decoration: none;
+  padding: 5px;
+  color: black;
+  transition: 0.2s ease-in-out;
+}
+
+.btn a:hover {
+  position: absolute;
+  border-radius: 5px;
+  background-color: white;
+  text-decoration: none;
+  padding: 5px;
+  color: black;
+  background-color: rgb(235, 218, 197);
+}
+
+.txt-title h1 {
+  color: white;
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 56px;
+}
+
+.slogan-contain {
+  position: absolute;
+  left: 10vh;
+}
+
+.subtitle h2 {
+  color: white;
+  font-family: "Lato", sans-serif;
+  font-weight: 350;
+  font-style: normal;
+  font-size: 40px;
+}
+
+.chck-btn {
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.android {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  background-color: rgb(21, 213, 108);
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.android h1 {
+  margin-left: 8px;
+  text-decoration: none;
+  color: white;
+  font-family: "Lato", sans-serif;
+  font-size: 18px;
+}
+
+.android i {
+  margin-top: 1px;
+}
+
+.ios {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.ios h1 {
+  margin-left: 6px;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  font-family: "Lato", sans-serif;
+  font-size: 18px;
+}
+
+.ios i {
+  margin-bottom: 1px;
+}
+
+.windows {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  background-color: rgb(13, 107, 133);
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.windows h1 {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-family: "Lato", sans-serif;
+  font-size: 18px;
+}
+
+.windows i {
+  color: white;
+  margin-right: 10px;
+}
+
+.platform {
+  display: flex;
+}
+
+.platform a {
+  display: flex;
+  margin-top: 20px;
+  margin-right: 20px;
+}
+
+.Multi-plt h2 {
+  color: rgb(255, 255, 255);
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 30px;
+}
+
+.sl-1 {
+  padding: 10px;
+  margin-top: 21vh;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.sl-2 {
+    width: 60vh;
+    margin-top: 1vh;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
