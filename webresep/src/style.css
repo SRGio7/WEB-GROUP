@@ -5,6 +5,10 @@
   font-family: "Amatic SC", sans-serif;
 }
 
+Link {
+    font-size: 2rem;
+}
+
 .content-1 {
   position: absolute;
   left: 18%;
@@ -72,40 +76,43 @@
 
 .option {
   cursor: pointer;
-  margin-top: 50px;
+  margin-top: 10px;
 }
 
+.optionContainer {
+}
 /* .option h1 {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 10px;
+  }
+  
+  .option h1:hover {
+    background-color: rgb(0, 201, 201);
     display: flex;
     justify-content: center;
     padding-bottom: 10px;
-    }
-    
-    .option h1:hover {
-        background-color: rgb(0, 201, 201);
-        display: flex;
-        justify-content: center;
-        padding-bottom: 10px;
-        } */
+    } */
 
 .A {
-  display: flex;
-  justify-content: center;
+  /* background-color: rgb(235, 218, 197); */
   padding: 10px;
   transition: 0.3s ease-in-out;
+  display: flex;
 }
 
-/* .A h1 {
-  font-family: "Lato", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 18px;
-} */
+.A h1 {
+  margin-left: 10px;
+}
+
+.A i {
+  margin-top: 5px;
+  margin-left: 20%;
+}
 
 .A:hover {
   background-color: rgb(235, 218, 197);
-  display: flex;
-  justify-content: center;
+  justify-content: left;
   padding-bottom: 10px;
 }
 
@@ -389,10 +396,56 @@
 }
 
 .sl-2 {
-    width: 60vh;
-    margin-top: 1vh;
+  width: 60vh;
+  margin-top: 1vh;
   padding: 10px;
   border-radius: 5px;
   background-color: rgba(0, 0, 0, 0.2);
 }
 
+.signInUP {
+  display: flex;
+  justify-content: center;
+}
+
+.SUPcontainer {
+  display: flex;
+  margin-bottom:15px;
+  margin-top:25px;
+}
+
+.SUPcontainer a {
+  color: black;
+  font-size: 35px;
+  margin-left: 20px;
+  text-decoration: none;
+  padding: 5px;
+  border-radius: 10px;
+  transition: 0.3s ease-out;
+}
+
+.SUPcontainer a:hover {
+  background-color: rgb(235, 218, 197);
+  color: black;
+  font-size: 35px;
+  margin-left: 20px;
+  text-decoration: none;
+}
+
+.userPfp-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.userPfp-container img {
+  object-fit: cover;
+  image-resolution: 1/ 1;
+  height: 120px;
+  width: auto;
+  border-radius: 200px;
+}
+
+.greetcontainer {
+  margin-top: 10px;
+}
