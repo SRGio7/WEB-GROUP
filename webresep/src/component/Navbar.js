@@ -1,6 +1,16 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
+import Swal from "sweetalert2";
 
 const Navbar = () => {
+  const handleclick = () => {
+    Swal.fire({
+      icon: "error",
+      title: "tidak tersedia untuk guest",
+      // footer: '<a href="#">Why do I have this issue?</a>',
+    });
+  };
+
   return (
     <div>
       <div className="stickyNav">
@@ -32,7 +42,7 @@ const Navbar = () => {
               </div>
               <div className="sign-up">
                 <h1>
-                  <Link to="/Register">Sign up</Link>
+                  <Link to="/register">Sign up</Link>
                 </h1>
               </div>
             </div>
@@ -42,10 +52,7 @@ const Navbar = () => {
             <div className="A">
               <i className="fa-solid fa-house" style={{ fontSize: "2rem" }} />
               <h1>
-                <Link
-                  style={{ textDecoration: "none", color: "Black" }}
-                  to="/Beranda"
-                >
+                <Link style={{ textDecoration: "none", color: "Black" }} to="/">
                   Beranda
                 </Link>
               </h1>
@@ -71,9 +78,9 @@ const Navbar = () => {
               <h1>
                 <Link
                   style={{ textDecoration: "none", color: "Black" }}
-                  to="/Resep"
+                  onClick={handleclick}
                 >
-                  bookmark
+                  bookmarks
                 </Link>
               </h1>
             </div>

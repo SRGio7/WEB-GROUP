@@ -175,6 +175,9 @@ const RegTable = () => {
             <p>
               Sudah punya akun?<Link to="/Login">Masuk</Link>
             </p>
+            <p className="home">
+              <Link to="/">Home</Link>
+            </p>
           </div>
         </form>
       </div>

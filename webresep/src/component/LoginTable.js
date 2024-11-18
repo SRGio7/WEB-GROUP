@@ -6,23 +6,28 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 const LoginTable = () => {
-  const navigate = useNavigate();
 
+  const [isLoggedIn,setLoggedIn] = useState(false);
+  
+  const navigate = useNavigate();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-
+  
   const handleSubmit = async (e) => {
+    setLoggedIn(true);
+    console.log("Hello")
+    console.log(isLoggedIn);
     e.preventDefault();
     try {
       await signInWithEmailAndPassword(auth, email, password);
       console.log("User Logged Succesfully");
-
+      
       setTimeout(() => {
         navigate("/");
       }, 2000);
     } catch (error) {
       console.log("test");
-
+      
       toast.error("Password atau email tidak valid!!", {
         position: "top-center",
         toastId: "success1",
@@ -74,10 +79,12 @@ const LoginTable = () => {
             />
           </div>
           <button type="submit">Login</button>
+
           <div className="mendaftar">
             <p>
               Tidak punya akun?<Link to="/Register">Register</Link>
             </p>
+            <p className="home"><Link to="/">Home</Link></p>
           </div>
         </form>
       </div>

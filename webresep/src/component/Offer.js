@@ -4,32 +4,18 @@ const Offer = () => {
     <div>
       <div className="langganan">
         <div className="prem-ket">
-          {/* <div className="toggle-switch">
-              <div style={{ position: "absolute", right: 10 }}>
-                <label className="toggle-switch-cf">
-                  <input type="checkbox" id="toggleCheckbox" />
-                  <span className="slider">
-                    <i
-                      className="bi bi-arrow-bar-right"
-                      style={{ fontSize: "1.5rem", position: "absolute" }}
-                    ></i>
-                  </span>
-                </label>
-              </div>
-            </div> */}
 
           <div className="ket-join">
             <h1>Premium Join Now!!</h1>
           </div>
 
           <div className="btn">
-            <Link style={{ textDecoration: "none" }} to = "/premium">
+            <Link style={{ textDecoration: "none" }} to = "/login">
               <h1>Join</h1>
             </Link>
           </div>
         </div>
       </div>
-      ;
     </div>
   );
 };
