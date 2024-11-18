@@ -1,10 +1,6 @@
 import "./App.css";
 import "./style.css";
-import Content from "./component/Content";
-import Header from "./component/Header";
-import Navbar from "./component/Navbar";
-import Offer from "./component/Offer"
-import Script from "./component/Script";
+import { Content, Header, Navbar, Offer } from "./component";
 
 function App() {
   return (
@@ -15,7 +11,6 @@ function App() {
           <Content />
           <Navbar />
           <Offer />
-          <Script/>
         </div>
       </div>
     </>
