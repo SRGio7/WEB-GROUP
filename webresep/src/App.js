@@ -4,6 +4,9 @@ import {Content,Header,Navbar,Offer} from "./component"
 function App() {
   return (
     <>
+      {/* <di>
+
+      </di> */}
       <div>
         <Header />
         <div className="container">
