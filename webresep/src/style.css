@@ -5,13 +5,10 @@
   font-family: "Amatic SC", sans-serif;
 }
 
-<<<<<<< HEAD
-=======
 Link {
     font-size: 2rem;
 }
 
->>>>>>> development
 .content-1 {
   position: absolute;
   left: 18%;
@@ -47,10 +44,6 @@ Link {
   height: 13vh;
   width: 17%;
   bottom: 0;
-<<<<<<< HEAD
-
-=======
->>>>>>> development
   box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.3);
 }
 
@@ -82,47 +75,10 @@ Link {
 
 .option {
   cursor: pointer;
-<<<<<<< HEAD
-  margin-top: 50px;
-}
-
-/* .option h1 {
-    display: flex;
-    justify-content: center;
-    padding-bottom: 10px;
-    }
-    
-    .option h1:hover {
-        background-color: rgb(0, 201, 201);
-        display: flex;
-        justify-content: center;
-        padding-bottom: 10px;
-        } */
-
-.A {
-  display: flex;
-  justify-content: center;
-  padding: 10px;
-  transition: 0.3s ease-in-out;
-}
-
-/* .A h1 {
-  font-family: "Lato", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 18px;
-} */
-
-.A:hover {
-  background-color: rgb(235, 218, 197);
-  display: flex;
-  justify-content: center;
-=======
   margin-top: 10px;
 }
 
-.optionContainer {
-}
+
 /* .option h1 {
   display: flex;
   justify-content: center;
@@ -155,7 +111,6 @@ Link {
 .A:hover {
   background-color: rgb(235, 218, 197);
   justify-content: left;
->>>>>>> development
   padding-bottom: 10px;
 }
 
@@ -439,20 +394,13 @@ Link {
 }
 
 .sl-2 {
-<<<<<<< HEAD
-    width: 60vh;
-    margin-top: 1vh;
-=======
   width: 60vh;
   margin-top: 1vh;
->>>>>>> development
   padding: 10px;
   border-radius: 5px;
   background-color: rgba(0, 0, 0, 0.2);
 }
 
-<<<<<<< HEAD
-=======
 .signInUP {
   display: flex;
   justify-content: center;
@@ -499,4 +447,3 @@ Link {
 .greetcontainer {
   margin-top: 10px;
 }
->>>>>>> development
