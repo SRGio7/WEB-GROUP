@@ -36,7 +36,8 @@ const RegTable = () => {
             email: user.email,
             username: username,
           });
-          // console.log("Berhasil terdaftar !!");
+
+          console.log("Berhasil terdaftar !!");
           toast.success("Berhasil Mendaftar!!", {
             position: "top-center",
             autoClose: 3000,
@@ -46,7 +47,7 @@ const RegTable = () => {
             pauseOnHover: false,
             draggable: true,
           });
-
+          
           setTimeout(() => {
             navigate("/login");
           }, 4000);
@@ -71,7 +72,7 @@ const RegTable = () => {
       }
     } catch (error) {
       // console.log(error.message);
-      toast.error("Email sudah digunakan", {
+      toast.error(error.message, {
         position: "top-center",
         toastId: "success1",
         pauseOnHover: false,

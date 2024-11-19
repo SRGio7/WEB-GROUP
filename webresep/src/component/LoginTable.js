@@ -7,23 +7,19 @@ import "react-toastify/dist/ReactToastify.css";
 
 const LoginTable = () => {
 
-  const [isLoggedIn,setLoggedIn] = useState(false);
-  
   const navigate = useNavigate();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   
   const handleSubmit = async (e) => {
-    setLoggedIn(true);
     console.log("Hello")
-    console.log(isLoggedIn);
     e.preventDefault();
     try {
       await signInWithEmailAndPassword(auth, email, password);
       console.log("User Logged Succesfully");
       
       setTimeout(() => {
-        navigate("/");
+        navigate("/loginuser");
       }, 2000);
     } catch (error) {
       console.log("test");
@@ -36,6 +32,7 @@ const LoginTable = () => {
         autoClose: 3000,
       });
     }
+
   };
 
   const bodyStyle = {

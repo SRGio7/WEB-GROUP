@@ -1,5 +1,5 @@
 import "./style.css";
-import {Content,Header,Navbar,Offer} from "./component"
+import { Content, Header, Navbar, Offer } from "./component"
 
 function App() {
   return (

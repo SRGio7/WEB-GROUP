@@ -5,6 +5,10 @@ import reportWebVitals from "./reportWebVitals";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Register from "./pages/Register/Register";
 import Login from "./pages/Login/Login";
+import UserLogin from "./pages/loggedUser/logged";
+import { AuthProvider } from "./AuthProvider"; // Import AuthProvider
+import ProtectedRoute from "./ProtectedRoute"; // Import ProtectedRoute
+import Rsp from "./pages/loggedUser/resep";
 
 const router = createBrowserRouter([
   {
@@ -16,8 +20,20 @@ const router = createBrowserRouter([
     element: <Register />,
   },
   {
+    path: "resep",
+    element: <Rsp />,
+  },
+  {
     path: "login",
     element: <Login />,
+  },
+  {
+    path: "loginuser",
+    element: (
+      <ProtectedRoute>
+        <UserLogin />
+      </ProtectedRoute>
+    ),
   },
   {
     path: "/*",
@@ -26,6 +42,10 @@ const router = createBrowserRouter([
 ]);
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(<RouterProvider router={router} />);
+root.render(
+  <AuthProvider>
+    <RouterProvider router={router} />
+  </AuthProvider>
+);
 
 reportWebVitals();
